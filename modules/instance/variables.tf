@@ -22,7 +22,7 @@ type=string
 variable "sg_name" {
 type=string
 }
-variable "desc" {
+variable "sg_desc" {
 type=string
 }
 
@@ -51,10 +51,11 @@ variable "public_subnet2_name" {
 type=string
 }
 variable "public_subnet2_zone" {
-type=string'
+type=string
 }
 variable "public_subnet2_range" {
 type=string
+}
 
 variable "private_subnet1_name" {
 type=string

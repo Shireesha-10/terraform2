@@ -45,7 +45,7 @@ Name=var.private_subnet2_name
 }
 availability_zone=var.private_subnet2_zone
 cidr_block=var.private_subnet2_range
-map_public_ip_on_launch="true
+map_public_ip_on_launch="true"
 }
 
 
