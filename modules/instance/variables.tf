@@ -76,6 +76,14 @@ variable "private_subnet2_range" {
 type=string
 }
 
+#igw name
+variable "igw_name" {
+type=string
+}
 
+#RT name
+variable "rt_name" {
+type=string
+}
 
 

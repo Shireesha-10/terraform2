@@ -29,5 +29,8 @@ module "my_instance_module" {
   private_subnet2_name  = var.private_subnet2_name
   private_subnet2_zone  = var.private_subnet2_zone
   private_subnet2_range = var.private_subnet2_range
-
+  
+  igw_name = var.igw_name
+  
+  rt_name = var.rt_name
 }

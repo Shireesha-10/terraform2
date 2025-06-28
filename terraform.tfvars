@@ -27,4 +27,7 @@ private_subnet2_name  = "jenkins_private_sn"
 private_subnet2_zone  = "us-east-1b"
 private_subnet2_range = "10.10.3.0/28"
 
+igw_name = "my-igw"
+
+rt_name = "my_route_table"
 

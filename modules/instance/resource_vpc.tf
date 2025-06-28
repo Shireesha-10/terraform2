@@ -49,7 +49,23 @@ map_public_ip_on_launch="true"
 }
 
 
+resource "aws_internet_gateway" "igw" {
+vpc_id=aws_vpc.terraform.id
+tags={
+Name=var.igw_name
+}
+}
 
+resource "aws_route_table" "myrt" {
+vpc_id=aws_vpc.terraform.id
+route{
+cidr_block="0.0.0.0/0"
+gateway_id=aws_internet_gateway.igw.id
+}
+tags={
+Name=var.rt_name
+}
+}
 
 
 
